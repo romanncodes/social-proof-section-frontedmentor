@@ -1,0 +1,143 @@
+:root {
+  --VeryDarkMagenta: hsl(300, 43%, 22%);
+  --SoftPink: hsl(333, 80%, 67%);
+
+  --DarkGrayishMagenta: hsl(303, 10%, 53%);
+  --LightGrayishMagenta: hsl(300, 24%, 96%);
+  --White: hsl(0, 0%, 100%);
+}
+
+body {
+  margin: 0px;
+  font-size: 15px;
+  font-family: "Spartan", sans-serif;
+}
+
+.container {
+  padding: 60px 30px;
+  background: url("../img/bg-pattern-top-mobile.svg") no-repeat,
+    url("../img/bg-pattern-bottom-mobile.svg") no-repeat;
+  background-position: left top, right bottom;
+}
+.header {
+  text-align: center;
+}
+.info {
+  margin-bottom: 40px;
+}
+.info h1 {
+  color: var(--VeryDarkMagenta);
+}
+.info p {
+  color: var(--DarkGrayishMagenta);
+  line-height: 1.7em;
+  font-size: 0.9em;
+}
+
+.rated {
+  margin-bottom: 16px;
+  padding: 16px;
+  background: var(--LightGrayishMagenta);
+  border-radius: 8px;
+}
+
+.rated span {
+  color: var(--VeryDarkMagenta);
+  font-weight: 700;
+  font-size: 0.9em;
+}
+
+.stars {
+  margin-bottom: 10px;
+}
+
+.cards {
+  margin-top: 50px;
+}
+
+.card {
+  margin-bottom: 16px;
+  color: #fff;
+  border-radius: 8px;
+  background-color: var(--VeryDarkMagenta);
+  padding: 30px;
+}
+
+.card p {
+  font-size: 0.8em;
+  line-height: 1.5em;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+}
+.profile img {
+  height: 45px;
+  border-radius: 25px;
+  margin-right: 18px;
+}
+
+.profile p {
+  color: white;
+  font-size: 0.9em;
+  font-weight: 500;
+}
+.profile p span {
+  color: var(--SoftPink);
+  font-weight: 400;
+  font-size: 0.9em;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding: 100px 100px;
+    background: url("../img/bg-pattern-top-desktop.svg") no-repeat,
+      url("../img/bg-pattern-bottom-desktop.svg") no-repeat;
+    background-position: left top, right bottom;
+  }
+
+  .header {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 100px;
+  }
+  .info {
+    text-align: left;
+  }
+  .rated {
+    display: flex;
+    align-items: center;
+  }
+  #rated1 {
+    margin-right: 100px;
+  }
+  #rated2 {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  #rated3 {
+    margin-left: 100px;
+  }
+  .stars {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+  }
+  #card1 {
+    margin-bottom: 80px;
+  }
+  #card2 {
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+  #card3 {
+    margin-top: 40px;
+  }
+}
